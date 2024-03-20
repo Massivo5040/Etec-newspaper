@@ -1,0 +1,49 @@
+.container ng-icon {
+  cursor: pointer;
+
+  &:hover {
+    color: white;
+  }
+}
+.container__menu {
+  position: absolute;
+  top: -4.4px;
+  left: -290px;
+  opacity: 0;
+
+  padding: 0 10px 0;
+  background-color: rgb(75, 75, 75);
+  border-radius: 0 10px 10px;
+
+  transition: left 1s;
+
+  .container__icon {
+    display: flex;
+    align-items: center;
+
+    height: 60px;
+  }
+
+  ul {
+    list-style: none;
+
+    hr {
+      height: 2px;
+      background-color: rgb(10, 10, 10);
+      border-style: none;
+    }
+
+    li {
+      font-size: 1.4rem;
+      margin: 10px;
+
+      cursor: pointer;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
+@import "nav-menu.animations.scss";

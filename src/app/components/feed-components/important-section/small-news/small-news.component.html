@@ -1,0 +1,16 @@
+<div class="container__small-card">
+  <div class="img" [style.backgroundImage]="newsCoverImage"></div>
+  <div class="news-info">
+    <div class="category">
+      <span>{{ newsCategory }}</span>
+    </div>
+    <div class="date">
+      <span>{{ newsDate }}</span>
+    </div>
+    <div class="title">
+      <span title="{{ newsTitle }}">
+        {{ newsTitleCut }}
+      </span>
+    </div>
+  </div>
+</div>

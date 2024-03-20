@@ -1,0 +1,42 @@
+.container__projects-card {
+  border-radius: 30px;
+  background-color: rgb(223, 203, 163);
+
+  &:hover {
+    transform: scale(1.009);
+  }
+
+  ng-icon:hover {
+    color: white;
+    transform: scale(1.09);
+  }
+
+  .header__card {
+    font-size: 2rem;
+  }
+
+  .footer__card {
+    font-size: 1.5rem;
+    .left-side {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .header__card,
+  .footer__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5px 10px;
+  }
+
+  .img {
+    height: 300px;
+    width: 100%;
+    background-image: url("https://wallpapercave.com/wp/wp7156526.png");
+    background-position: center;
+    background-size: cover;
+  }
+}

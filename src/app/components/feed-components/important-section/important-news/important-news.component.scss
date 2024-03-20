@@ -1,0 +1,35 @@
+.container__important-news {
+  width: 90%;
+  margin: 0 auto 50px;
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+
+  .container__news-card {
+    display: flex;
+    flex-direction: row;
+
+    app-big-news {
+      width: 40%;
+    }
+
+    hr {
+      width: 3px;
+      margin: 0 20px;
+    }
+
+    .container__small-news {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      width: 50%;
+
+      app-small-news {
+        height: 32%;
+      }
+    }
+  }
+}

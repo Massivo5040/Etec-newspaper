@@ -1,0 +1,14 @@
+<div class="container__projects">
+  <h2 id="students-projects">Projetos dos Alunos</h2>
+
+  <div class="container__cards">
+    @for(project of projectsExample; track $index) {
+    <app-student-project-card
+      [projectAuthor]="project.author"
+      [projectCover]="project.cover"
+      [projectName]="project.name"
+      [projectTechnologies]="project.technologies"
+    ></app-student-project-card>
+    }
+  </div>
+</div>

@@ -1,0 +1,28 @@
+.container__search_icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  background-color: whitesmoke;
+  border-radius: 20px;
+
+  ng-icon {
+    position: absolute;
+    left: 2px;
+
+    cursor: pointer;
+  }
+
+  input {
+    font-size: 1.2rem;
+    border: none;
+
+    width: 230px;
+    height: 40px;
+    padding: 3px 10px 3px 34px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+
+    transition: width 1s ease-out;
+  }
+}

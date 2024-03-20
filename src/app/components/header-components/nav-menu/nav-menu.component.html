@@ -1,0 +1,33 @@
+<div class="container">
+  <ng-icon
+    name="heroBars3"
+    size="42"
+    strokeWidth="2.5"
+    (click)="toggleMenu()"
+  ></ng-icon>
+  <!-- ARRUMAR O CLOSED CARREGAR ASSIM QUE A PÁGINA CARREGA -->
+  <div class="container__menu" [@openClose]="isOpen ? 'open' : 'closed'">
+    <div class="container__icon">
+      <ng-icon
+        name="heroXMark"
+        size="42"
+        strokeWidth="2.5"
+        (click)="toggleMenu()"
+      ></ng-icon>
+    </div>
+    <ul>
+      <hr />
+      <a href="#important-news">
+        <li>Notícias Importantes</li>
+      </a>
+      <hr />
+      <a href="#students-projects">
+        <li>Projetos dos Alunos</li>
+      </a>
+      <hr />
+      <a href="">
+        <li>Outras Notícias</li>
+      </a>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="container__projects-card">
+  <a href="">
+    <div class="header__card">
+      <!-- Procurar sobre diretivas para definir o tamanho máximo dos títulos -->
+      <span>{{ projectName }}</span>
+      <ng-icon
+        name="heroEllipsisHorizontal"
+        size="48"
+        strokeWidth="2"
+      ></ng-icon>
+    </div>
+    <div class="img" [style.backgroundImage]="projectCover.url"></div>
+    <div class="footer__card">
+      <div class="left-side">
+        <span>{{ projectAuthor.name }}, {{ projectAuthor.grade }}</span>
+        <span>
+          <span *ngFor="let icon of projectTechnologies">
+            <span [innerHTML]="getSafeSvg(icon.code)"></span>
+          </span>
+        </span>
+      </div>
+      <div class="right-side">
+        <ng-icon
+          name="heroChatBubbleOvalLeftEllipsis"
+          size="48"
+          strokeWidth="2"
+        ></ng-icon>
+      </div>
+    </div>
+  </a>
+</div>

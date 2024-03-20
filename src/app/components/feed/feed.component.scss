@@ -1,0 +1,14 @@
+.container__feed {
+  hr {
+    background-color: black;
+
+    width: 97%;
+    height: 2.5px;
+    margin: 25px auto;
+    border: none;
+  }
+
+  app-important-news {
+    margin-bottom: 100px;
+  }
+}

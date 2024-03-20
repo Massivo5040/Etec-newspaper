@@ -1,0 +1,22 @@
+<div class="container__important-news">
+  <h2 id="important-news">Notícias importantes</h2>
+
+  <div class="container__news-card">
+    <app-big-news
+      newsCategory="Games"
+      newsCoverImage='url("https://th.bing.com/th/id/R.155a4d8742ea861374c4d5f33a441806?rik=WhS83LeTu3Z6pA&pid=ImgRaw&r=0"), url("https://th.bing.com/th/id/OIP.VK0xFiCsRaQcl9zDS3VktAHaEK?rs=1&pid=ImgDetMain")'
+      newsTitle="Review do jogo de Hades"
+    ></app-big-news>
+    <hr />
+    <div class="container__small-news">
+      @for(news of newsExample; track $index) {
+      <app-small-news
+        newsCategory="{{ news.category }}"
+        newsCoverImage="{{ news.cover.url }}"
+        newsDate="{{ news.date }}"
+        newsTitle="{{ news.title }}"
+      ></app-small-news>
+      }
+    </div>
+  </div>
+</div>
